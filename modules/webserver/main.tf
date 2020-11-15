@@ -20,7 +20,7 @@ resource "google_compute_instance" "single_server" {
 
     # Same but readable:
     metadata_startup_script = <<-EOF
-                              echo 'Hello from Terraform!' > index.html
+                              echo 'Hello from Terraform Module v0.0.2!' > index.html
                               nohup busybox httpd -f -p 8080 &
                               EOF
 }
